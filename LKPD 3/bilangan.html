@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bilangan satuan puluhan ratusan</title>
+</head>
+<body>
+    
+    <script>
+        let bilangan = 1334
+
+        let satuan = bilangan % 10 
+        let puluhan = Math.floor(bilangan/10) % 10
+        let ratusan = Math.floor(bilangan/100) % 10
+
+        console.log(satuan + ' bilangan satuan')
+        console.log(puluhan + ' bilangan puluhan')
+        console.log(ratusan  + ' bilangan ratusan')
+    </script>
+</body>
+</html>

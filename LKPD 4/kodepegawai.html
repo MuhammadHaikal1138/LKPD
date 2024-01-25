@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kode pegawai</title>
+</head>
+<body>
+    
+
+    <script>
+// ------------------------------ Menggunakan Math floor -----------------------------------------------------------
+        // let kode = 22512197803
+
+        // let g = Math.floor((kode % 100000000000) /10000000000)
+        // let dd = Math.floor((kode % 10000000000) / 100000000)
+        // let mm = Math.floor((kode % 100000000) /1000000)
+        // let yy = Math.floor((kode % 1000000) / 100)
+        // let identitas = Math.floor((kode % 100))
+
+        // switch(mm){
+        //     case 1 :
+        //     month = "januari"
+        //     break;
+        //     case 2 :
+        //     month = "februari"
+        //     break;
+        //     case 3 :
+        //     month = "maret"
+        //     break;
+        //     case 4 :
+        //     month = "april"
+        //     break;
+        //     case 5 :
+        //     month = "mei"
+        //     break;
+        //     case 6 :
+        //     month = "juni"
+        //     break;
+        //     case 7 :
+        //     month = "juli"
+        //     break;
+        //     case 8 :
+        //     month = "agustus"
+        //     break;
+        //     case 9 :
+        //     month = "september"
+        //     break;
+        //     case 10 :
+        //     month = "oktober"
+        //     break;
+        //     case 11 :
+        //     month = "november"
+        //     break;
+        //     case 12 :
+        //     month = "desember"
+        //     break;
+        // }
+        
+        // console.log(g)
+        // console.log(dd)
+        // console.log(mm + ' adalah bulan ' + month)
+        // console.log(yy)
+        // console.log(identitas)
+// --------------------------------------------------------------------------------------------------------------
+
+
+// ------------------------------ Menggunakan Slice -------------------------------------------------------------
+ let kode = "11103200804"
+  let g = kode.slice(0,1)
+  let dd = kode.slice(1,3)
+  let mm = parseInt(kode.slice(3,5))
+  let yy = kode.slice(5,9)
+  let nn = kode.slice(9,11)
+
+  switch(mm){
+    case 1 :
+        month = "januari"
+        break;
+        case 2 :
+        month = "februari"
+        break;
+        case 3 :
+        month = "maret"
+        break;
+        case 4 :
+        month = "april"
+        break;
+        case 5 :
+        month = "mei"
+        break;
+        case 6 :
+        month = "juni"
+        break;
+        case 7 :
+        month = "juli"
+        break;
+        case 8 :
+        month = "agustus"
+        break;
+        case 9 :
+        month = "september"
+        break;
+        case 10 :
+        month = "oktober"
+        break;
+        case 11 :
+        month = "november"
+        break;
+        case 12 :
+        month = "desember"
+        break;
+    }
+    console.log(`nomor anggota pekerja anda adalah ${g} tanggal lahir anda adalah ${dd} bulan lahir anda adalah ${month} tahun lahir anda adalah ${yy} nomor identitas anda adalah ${nn}`)
+    // --------------------------------------------------------------------------------------------------------------
+    </script>
+</body>
+</html>
